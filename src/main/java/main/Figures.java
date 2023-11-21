@@ -1,23 +1,32 @@
 package main;
+ import Figures.AbstFigure;
+ import Figures.IFigure;
+ import Figures.Circle;
+ import Figures.Rectangle;
+ import Figures.MyCircle;
+ import Figures.MyRectangle;
+
 
 public class Figures {
     public static void main(String[] args) {
 
         // Uncomment the code below when you are done implementing
 
-        /*
-        MyCircle c1 = new MyCircle("blue",7);
-        System.out.println(c1.getDescription());
+        MyCircle c1 = new MyCircle("circle c1",7, "blue");
+        c1.getDescription();
+        System.out.println();
 
-        MyCircle c2 = new MyCircle("purple",3);
-        System.out.println(c2.getDescription());
+        MyCircle c2 = new MyCircle("circle c2",3,"purple");
+        c2.getDescription();
+        System.out.println();
 
-        MyRectangle r1 = new MyRectangle("orange",5,2);
-        System.out.println(r1.getDescription());
+        MyRectangle r1 = new MyRectangle ("rectangle r1", 5, 2, "orange");
+        r1.getDescription();
+        System.out.println();
 
-        MyRectangle r2 = new MyRectangle("red",8,7);
-        System.out.println(r2.getDescription());
-        */
+        MyRectangle r2 = new MyRectangle("rectangle r2",8,7, "red");
+        r2.getDescription();
+        System.out.println();
 
     }
 }
